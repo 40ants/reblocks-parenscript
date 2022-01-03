@@ -1,10 +1,10 @@
-(defsystem weblocks-parenscript
+(defsystem reblocks-parenscript
   :version (:read-file-form "version.lisp-expr")
   :author ""
   :license ""
   :class :package-inferred-system
   :pathname "src"
-  :depends-on ("weblocks-parenscript/weblocks-parenscript")
+  :depends-on ("reblocks-parenscript/reblocks-parenscript")
   :description ""
   :long-description
   #.(with-open-file (stream (merge-pathnames
@@ -19,5 +19,5 @@
           (setf (fill-pointer seq)
                 (read-sequence seq stream))
           seq)))
-  :in-order-to ((test-op (test-op weblocks-parenscript-test))))
+  :in-order-to ((test-op (test-op reblocks-parenscript-test))))
 

@@ -1,10 +1,10 @@
 (in-package :cl-user)
-(defpackage weblocks-parenscript-test
+(defpackage reblocks-parenscript-test
   (:use :cl
-        :weblocks-parenscript
+        :reblocks-parenscript
         :prove
         :hamcrest.matchers))
-(in-package :weblocks-parenscript-test)
+(in-package :reblocks-parenscript-test)
 
 
 (plan 1)

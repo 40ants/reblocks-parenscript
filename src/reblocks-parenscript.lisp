@@ -1,11 +1,11 @@
-(defpackage weblocks-parenscript
+(defpackage reblocks-parenscript
   (:use :cl)
-  (:import-from #:weblocks/dependencies
+  (:import-from #:reblocks/dependencies
                 #:local-dependency
                 #:get-url
                 #:get-content-type
                 #:serve)
-  (:import-from #:weblocks/utils/misc
+  (:import-from #:reblocks/utils/misc
                 #:md5)
   (:import-from #:parenscript
                 #:chain
@@ -16,7 +16,7 @@
    #:make-dependency
    #:make-dependency*
    #:make-js-handler))
-(in-package weblocks-parenscript)
+(in-package reblocks-parenscript)
 
 
 (defclass parenscript-dependency (local-dependency)
@@ -87,7 +87,7 @@ a real filename."
 
 
 (defmacro make-js-handler (&key lisp-code js-code)
-  "Creates a Weblocks action and returns JavaScript code, which can be used as onChange, onClick, etc. handler.
+  "Creates a Reblocks action and returns JavaScript code, which can be used as onChange, onClick, etc. handler.
 
    Args:
        lisp-code (list-of-conses):
@@ -118,7 +118,7 @@ a real filename."
            :name \"url\"
            :type \"text\"
            :onchange
-           (weblocks-parenscript:make-js-handler
+           (reblocks-parenscript:make-js-handler
             :lisp-code ((&key url)
                         (update-url (branches widget)
                                     url))
@@ -137,7 +137,7 @@ a real filename."
     (error "JS code should be a list of forms"))
   
   (alexandria:with-gensyms (action-code)
-    `(let* ((,action-code (weblocks/actions::function-or-action->action
+    `(let* ((,action-code (reblocks/actions::function-or-action->action
                            (lambda ,(car lisp-code)
                              ,@(cdr lisp-code)))))
        (ps* (make-js-code-for-handler ',js-code
