@@ -1,17 +1,17 @@
 ======================
- weblocks-parenscript
+ reblocks-parenscript
 ======================
 
 .. insert-your badges like that:
 
-.. image:: https://travis-ci.org/40ants/weblocks-parenscript.svg?branch=master
-    :target: https://travis-ci.org/40ants/weblocks-parenscript
+.. image:: https://travis-ci.org/40ants/reblocks-parenscript.svg?branch=master
+    :target: https://travis-ci.org/40ants/reblocks-parenscript
 
 .. Everything starting from this commit will be inserted into the
    index page of the HTML documentation.
 .. include-from
 
-This lisp makes possible to add a dependency to weblocks widgets where
+This lisp makes possible to add a dependency to reblocks widgets where
 dependency is written as lisp code in Parenscript.
 
 Reasoning
