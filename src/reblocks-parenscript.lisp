@@ -7,6 +7,7 @@
                 #:serve)
   (:import-from #:reblocks/utils/misc
                 #:md5)
+  (:import-from #:alexandria)
   (:import-from #:parenscript
                 #:chain
                 #:ps
@@ -78,7 +79,8 @@ a real filename."
         (cond
           ((equal args-type
                   "object")
-           (initiate-action-with-args ,action-code "" args "POST"))
+           (initiate-action ,action-code (parenscript:create :method "POST"
+                                                             :args args)))
           (t (chain console (error (+ "Arguments, to be passed to the action should be an object, not "
                                        args-type)))))
         parenscript:false))
@@ -137,7 +139,7 @@ a real filename."
     (error "JS code should be a list of forms"))
   
   (alexandria:with-gensyms (action-code)
-    `(let* ((,action-code (reblocks/actions::function-or-action->action
+    `(let* ((,action-code (reblocks/actions:make-action
                            (lambda ,(car lisp-code)
                              ,@(cdr lisp-code)))))
        (ps* (make-js-code-for-handler ',js-code
