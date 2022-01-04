@@ -1,10 +1,12 @@
 (defsystem reblocks-parenscript
   :version (:read-file-form "version.lisp-expr")
-  :author ""
-  :license ""
+  :author "Alexander Artemenko"
+  :license "Unlicense"
   :class :package-inferred-system
   :pathname "src"
-  :depends-on ("reblocks-parenscript/reblocks-parenscript")
+  :serial t
+  :depends-on ("reblocks"
+               "reblocks-parenscript/reblocks-parenscript")
   :description ""
   :long-description
   #.(with-open-file (stream (merge-pathnames
