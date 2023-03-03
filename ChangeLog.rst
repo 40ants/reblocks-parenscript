@@ -2,6 +2,14 @@
  ChangeLog
 ===========
 
+0.5.0 (2023-03-03)
+==================
+
+* Fixed thread-safety issue happened in Parenscript.
+
+  Parenscript is unsafe yet, the problem should be solved in theЖ
+  https://gitlab.common-lisp.net/parenscript/parenscript/-/issues/11
+
 0.4.0
 =====
 
