@@ -7,7 +7,7 @@
 
 * Fixed thread-safety issue happened in Parenscript.
 
-  Parenscript is unsafe yet, the problem should be solved in theЖ
+  Parenscript is unsafe yet, the problem should be solved in the:
   https://gitlab.common-lisp.net/parenscript/parenscript/-/issues/11
 
 0.4.0
