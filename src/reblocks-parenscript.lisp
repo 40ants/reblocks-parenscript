@@ -1,5 +1,6 @@
-(defpackage reblocks-parenscript
+(uiop:define-package #:reblocks-parenscript
   (:use :cl)
+  (:nicknames #:reblocks-parenscript/reblocks-parenscript)
   (:import-from #:reblocks/dependencies
                 #:local-dependency
                 #:get-url
@@ -9,15 +10,29 @@
                 #:md5)
   (:import-from #:alexandria)
   (:import-from #:parenscript
-                #:chain
-                #:ps
-                #:ps*)
+                #:chain)
+  (:import-from #:bordeaux-threads
+                #:with-lock-held
+                #:make-lock)
 
-  (:export
-   #:make-dependency
-   #:make-dependency*
-   #:make-js-handler))
-(in-package reblocks-parenscript)
+  (:export #:make-dependency
+           #:make-dependency*
+           #:make-js-handler))
+(in-package #:reblocks-parenscript)
+
+
+(defvar *js-compiler-lock*
+  (make-lock "JS Compiler Lock"))
+
+
+(defun ps* (&rest parenscript-code)
+  (with-lock-held (*js-compiler-lock*)
+    (apply #'parenscript:ps* parenscript-code)))
+
+
+(defmacro ps (&body body)
+  `(with-lock-held (*js-compiler-lock*)
+     (parenscript:ps ,@body)))
 
 
 (defclass parenscript-dependency (local-dependency)
