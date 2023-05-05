@@ -1,25 +1,14 @@
-(defsystem reblocks-parenscript
-  :version (:read-file-form "version.lisp-expr")
-  :author "Alexander Artemenko"
+#-asdf3.1 (error "reblocks-parenscript requires ASDF 3.1 because for lower versions pathname does not work for package-inferred systems.")
+(defsystem "reblocks-parenscript"
+  :description "An utility to define JavaScript dependencies for Weblocks widgets using Parenscript."
+  :author "Alexander Artemenko <svetlyak.40wt@gmail.com>"
   :license "Unlicense"
-  :class :package-inferred-system
+  :homepage "https://40ants.com/reblocks-parenscript/"
+  :source-control (:git "https://github.com/40ants/reblocks-parenscript")
+  :bug-tracker "https://github.com/40ants/reblocks-parenscript/issues"
+  :class :40ants-asdf-system
+  :defsystem-depends-on ("40ants-asdf-system")
   :pathname "src"
-  :serial t
   :depends-on ("reblocks"
                "reblocks-parenscript/reblocks-parenscript")
-  :description ""
-  :long-description
-  #.(with-open-file (stream (merge-pathnames
-                             #p"README.rst"
-                             (or *load-pathname* *compile-file-pathname*))
-                            :if-does-not-exist nil
-                            :direction :input)
-      (when stream
-        (let ((seq (make-array (file-length stream)
-                               :element-type 'character
-                               :fill-pointer t)))
-          (setf (fill-pointer seq)
-                (read-sequence seq stream))
-          seq)))
-  :in-order-to ((test-op (test-op reblocks-parenscript-test))))
-
+  :in-order-to ((test-op (test-op "reblocks-parenscript-tests"))))
