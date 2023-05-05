@@ -53,7 +53,7 @@ This library should be used to define JavaScript dependencies for Reblocks widge
 
 <a id="x-28-23A-28-2820-29-20BASE-CHAR-20-2E-20-22REBLOCKS-PARENSCRIPT-22-29-20PACKAGE-29"></a>
 
-#### [package](f689) `reblocks-parenscript`
+#### [package](a5fc) `reblocks-parenscript`
 
 <a id="x-28REBLOCKS-PARENSCRIPT-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-PARENSCRIPT-3FClasses-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -65,7 +65,7 @@ This library should be used to define JavaScript dependencies for Reblocks widge
 
 <a id="x-28REBLOCKS-PARENSCRIPT-3APARENSCRIPT-DEPENDENCY-20CLASS-29"></a>
 
-###### [class](732b) `reblocks-parenscript:parenscript-dependency` (local-dependency)
+###### [class](57d3) `reblocks-parenscript:parenscript-dependency` (local-dependency)
 
 Keeps JavaScript code, created using [`make-dependency`][8c2d] macro or [`make-dependency*`][8b74] function.
 
@@ -73,7 +73,7 @@ Keeps JavaScript code, created using [`make-dependency`][8c2d] macro or [`make-d
 
 <a id="x-28REBLOCKS-PARENSCRIPT-3AJS-CODE-20-2840ANTS-DOC-2FLOCATIVES-3AREADER-20REBLOCKS-PARENSCRIPT-3APARENSCRIPT-DEPENDENCY-29-29"></a>
 
-###### [reader](b704) `reblocks-parenscript:js-code` (parenscript-dependency) (:js)
+###### [reader](0650) `reblocks-parenscript:js-code` (parenscript-dependency) (:js)
 
 <a id="x-28REBLOCKS-PARENSCRIPT-DOCS-2FINDEX-3A-3A-7C-40REBLOCKS-PARENSCRIPT-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -81,7 +81,7 @@ Keeps JavaScript code, created using [`make-dependency`][8c2d] macro or [`make-d
 
 <a id="x-28REBLOCKS-PARENSCRIPT-3AMAKE-DEPENDENCY-2A-20FUNCTION-29"></a>
 
-##### [function](e7fd) `reblocks-parenscript:make-dependency*` parenscript-code
+##### [function](761d) `reblocks-parenscript:make-dependency*` parenscript-code
 
 This function works similarly like [`make-dependency`][8c2d] macro but accepts
 Parenscript code as a list. They are related to each other like
@@ -115,7 +115,7 @@ function showAlert() {
 
 <a id="x-28REBLOCKS-PARENSCRIPT-3AMAKE-DEPENDENCY-20-2840ANTS-DOC-2FLOCATIVES-3AMACRO-29-29"></a>
 
-##### [macro](4114) `reblocks-parenscript:make-dependency` &body parenscript-code
+##### [macro](f614) `reblocks-parenscript:make-dependency` &body parenscript-code
 
 This macro creates an object of class [`parenscript-dependency`][1a62] transformin the `BODY`
 into JavaScript Code. It interpreters whole body as a Parenscript code.
@@ -158,7 +158,7 @@ You can use this dependency in a method of [`reblocks/dependencies:get-dependenc
 ```
 <a id="x-28REBLOCKS-PARENSCRIPT-3AMAKE-JS-HANDLER-20-2840ANTS-DOC-2FLOCATIVES-3AMACRO-29-29"></a>
 
-##### [macro](31ad) `reblocks-parenscript:make-js-handler` &key lisp-code js-code
+##### [macro](047c) `reblocks-parenscript:make-js-handler` &key lisp-code js-code
 
 Creates a Reblocks action and returns JavaScript code, which can be used as `onChange`, `onClick`, etc. handler.
 
@@ -214,12 +214,12 @@ in the `HTML` input. This way you can make a suggest or on fly value validation:
 [0fcf]: https://40ants.com/reblocks/dependencies/#x-28REBLOCKS-2FDEPENDENCIES-3AGET-DEPENDENCIES-20GENERIC-FUNCTION-29
 [c5e3]: https://github.com/40ants/reblocks-parenscript
 [cd34]: https://github.com/40ants/reblocks-parenscript/actions
-[f689]: https://github.com/40ants/reblocks-parenscript/blob/c81e353f0c491383a8f238976302ee5026f90f76/src/reblocks-parenscript.lisp#L1
-[e7fd]: https://github.com/40ants/reblocks-parenscript/blob/c81e353f0c491383a8f238976302ee5026f90f76/src/reblocks-parenscript.lisp#L111
-[31ad]: https://github.com/40ants/reblocks-parenscript/blob/c81e353f0c491383a8f238976302ee5026f90f76/src/reblocks-parenscript.lisp#L181
-[732b]: https://github.com/40ants/reblocks-parenscript/blob/c81e353f0c491383a8f238976302ee5026f90f76/src/reblocks-parenscript.lisp#L40
-[b704]: https://github.com/40ants/reblocks-parenscript/blob/c81e353f0c491383a8f238976302ee5026f90f76/src/reblocks-parenscript.lisp#L41
-[4114]: https://github.com/40ants/reblocks-parenscript/blob/c81e353f0c491383a8f238976302ee5026f90f76/src/reblocks-parenscript.lisp#L61
+[a5fc]: https://github.com/40ants/reblocks-parenscript/blob/d224b575c308e6d0df621c73b4b3c1428a0ff188/src/reblocks-parenscript.lisp#L1
+[761d]: https://github.com/40ants/reblocks-parenscript/blob/d224b575c308e6d0df621c73b4b3c1428a0ff188/src/reblocks-parenscript.lisp#L111
+[047c]: https://github.com/40ants/reblocks-parenscript/blob/d224b575c308e6d0df621c73b4b3c1428a0ff188/src/reblocks-parenscript.lisp#L181
+[57d3]: https://github.com/40ants/reblocks-parenscript/blob/d224b575c308e6d0df621c73b4b3c1428a0ff188/src/reblocks-parenscript.lisp#L40
+[0650]: https://github.com/40ants/reblocks-parenscript/blob/d224b575c308e6d0df621c73b4b3c1428a0ff188/src/reblocks-parenscript.lisp#L41
+[f614]: https://github.com/40ants/reblocks-parenscript/blob/d224b575c308e6d0df621c73b4b3c1428a0ff188/src/reblocks-parenscript.lisp#L61
 [f0d4]: https://github.com/40ants/reblocks-parenscript/issues
 [8236]: https://quickdocs.org/alexandria
 [3dbf]: https://quickdocs.org/bordeaux-threads
