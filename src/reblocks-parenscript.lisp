@@ -181,14 +181,12 @@ You can use this dependency in a method of REBLOCKS/DEPENDENCIES:GET-DEPENDENCIE
 (defmacro make-js-handler (&key lisp-code js-code)
   "Creates a Reblocks action and returns JavaScript code, which can be used as `onChange`, `onClick`, etc. handler.
 
-   Arguments:
-
-   - LISP-CODE (list-of-conses):
+   - Argument LISP-CODE should be a list of conses:
 
        First list item should be action's lambda list.
        Other list items are wrapped into implicit progn.
 
-   - JS-CODE (list of conses):
+   - Argument JS-CODE also should be a list of conses:
 
        Parenscript code, returning an object.
        This object will be passed to the Lisp part of the handler
