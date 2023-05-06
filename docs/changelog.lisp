@@ -13,6 +13,8 @@
                               "REPL"
                               "JS"
                               "HTTP"))
+  (0.6.0 2023-05-06
+         "* Add documentation.")
   (0.5.0 2023-03-03
          "* Fixed thread-safety issue happened in Parenscript.
             Parenscript is unsafe yet, the problem should be solved in the:
