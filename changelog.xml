@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+    <channel>
+        <title>reblocks-parenscript-docs ChangeLog</title>
+        <link>https://40ants.com/reblocks-parenscript/</link>
+        <generator>xml-emitter</generator>
+        <language>en-us</language>
+        <item>
+            <title>0.6.0  (2023-05-06)</title>
+            <description>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Add documentation.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+            <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
+        </item>
+        <item>
+            <title>0.5.0  (2023-03-03)</title>
+            <description>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Fixed thread-safety issue happened in Parenscript.
+Parenscript is unsafe yet, the problem should be solved in the:
+https://gitlab.common-lisp.net/parenscript/parenscript/-/issues/11&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+            <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+        </item>
+        <item>
+            <title>0.4.0  (2021-01-03)</title>
+            <description>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Added macro &lt;a href=&quot;https://40ants.com/reblocks-parenscript/#x-28REBLOCKS-PARENSCRIPT-3AMAKE-JS-HANDLER-20-2840ANTS-DOC-2FLOCATIVES-3AMACRO-29-29&quot; data-document=&quot;https://40ants.com/reblocks-parenscript/&quot; data-node=&quot;x-28REBLOCKS-PARENSCRIPT-3AMAKE-JS-HANDLER-20-2840ANTS-DOC-2FLOCATIVES-3AMACRO-29-29&quot;&gt;&lt;code&gt;make-js-handler&lt;/code&gt;&lt;/a&gt;, which allows easily create custom
+event handlers with Lisp and &lt;code&gt;JS&lt;/code&gt; code parts.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+            <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+        </item>
+        <item>
+            <title>0.3.0  (2018-02-03)</title>
+            <description>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Fixed to work with weblocks&amp;gt;= 0.25.0.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+            <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
+        </item>
+        <item>
+            <title>0.2.0  (2017-09-21)</title>
+            <description>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Added a function &lt;a href=&quot;https://40ants.com/reblocks-parenscript/#x-28REBLOCKS-PARENSCRIPT-3AMAKE-DEPENDENCY-2A-20FUNCTION-29&quot; data-document=&quot;https://40ants.com/reblocks-parenscript/&quot; data-node=&quot;x-28REBLOCKS-PARENSCRIPT-3AMAKE-DEPENDENCY-2A-20FUNCTION-29&quot;&gt;&lt;code&gt;make-dependency*&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+            <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+        </item>
+        <item>
+            <title>0.1.0  (2017-09-02)</title>
+            <description>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Initial version.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+            <pubDate>Sat, 02 Sep 2017 00:00:00 +0000</pubDate>
+        </item>
+    </channel>
+</rss>
